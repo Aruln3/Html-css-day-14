@@ -1,11 +1,5 @@
-.parent-container {
-    display: flex;
-    justify-content: center;
-    border: 1px solid black;
-}
-
-.child {
-    border: 1px solid black;
+body{
+    background-color:black;
 }
 .grid-container {
     float: certer;
@@ -22,9 +16,47 @@
 .grid-container > * {
     background-color: gray;
     border-radius: 5px;
-    padding: 20px;
+    padding: 40px;
     color: white;
     margin: 20px;
+    height:10vh;
+        
+}
+
+input{
+height:10px;
+    padding:0px;
+    width:80px;
+    display:block;
+  color : black;
+}
+
+.grid-container div:first-child {
+    background-color: gray;
+    border-radius: 5px;
+    padding: 40px;
+    color: white;
+    width:28%;
+    margin: 20px;
+}
+
+.grid-container div:nth-child(3) {
+    background-color: gray;
+    border-radius: 5px;
+    padding: 40px;
+    color: white;
+    width:30%;
+    margin: 10px;
+}
+
+.grid-container div:nth-child(4) {
+    background-color: gray;
+    border-radius: 5px;
+    padding: 40px;
+    color: white;
+    width:290%;
+    margin: 10px;
+  margin-left:20px;
 }
 
 .grid-container1 {
@@ -45,8 +77,8 @@
   text-align: center;
     display: flex;
     align-items: flex-start;
-    height: 240px;
-    width:90px;
+    height: 70vh;
+    width:35vh;
     float:left;
     margin:6vh;
     background-color: gray;
@@ -60,9 +92,31 @@
 
 .last{
       width: 312%;
+    display: block;
 }
 
 .content{
    display: flex;
     justify-content: center;
+}
+
+.grid-container2 {
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    height: 40px;
+    width:110vh;
+    margin: 37px 42px 28px;
+    background-color: gray;
+    border-radius: 5px;
+    color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
 }
